@@ -116,48 +116,4 @@ void variablePopulation() {
   triY2=rectHeight*3.0;
   triX3=rectWidth*2.70;
   triY3=rectHeight*2.50;
-  //
-  //Face
- // faceX = rectWidth*5/2;
- // faceY = rectHeight*5/2;
- // faceDiameter = rectHeight*4/5;
-  //
- // leftEyeX = rectWidth*12/5;
- // leftEyeY = rectHeight*12/5;
- // rightEyeX = rectWidth*13/5;
- // rightEyeY = leftEyeY;
- // eyeDiameter = rectHeight/7;
-  //
- // mouthX1 = leftEyeX;
- // mouthY1 = rectHeight*21/8;
- // mouthX2 = rightEyeX;
- // mouthY2 = mouthY1;
-  //
-  //
-  //Tree (population numbers are from past composite images oroject, slightly modified
-  trunkX1 = rectWidth/2;
-  trunkY1 = rectHeight*13/5;
-  trunkX2 = rectWidth/2;
-  trunkY2 = rectHeight*57/20;
-  //
-  leaf1X1 = rectWidth*1/2;
-  leaf1Y1 = rectHeight*23/10;
-  leaf1X2 = rectWidth*7/20;
-  leaf1Y2 = rectHeight*53/20;
-  leaf1X3 = rectWidth*13/20;
-  leaf1Y3 = leaf1Y2;
-  //
-  leaf2X1 = rectWidth*1/2;
-  leaf2Y1 = rectHeight*11/5;
-  leaf2X2 = rectWidth*2/5;
-  leaf2Y2 = rectHeight*49/20;
-  leaf2X3 = rectWidth*3/5;
-  leaf2Y3 = leaf2Y2;
-  //
-  leaf3X1 = rectWidth*1/2;
-  leaf3Y1 = rectHeight*21/10;
-  leaf3X2 = rectWidth*17/40;
-  leaf3Y2 = rectHeight*23/10;
-  leaf3X3 = rectWidth*23/40;
-  leaf3Y3 = leaf3Y2;
 }

@@ -30,9 +30,6 @@ float text6X, text6Y, text6Width, text6Height, text1Y, text1Height, text8Y;
 float image1X, image1Y, image2X, image2Y, image3X, image3Y, image4X, image4Y, image5X, image5Y, image6X, image6Y, imageWidth, imageHeight;
 PImage pic1, pic2, pic3, pic4, pic5, pic6, pic7;
 float triX1, triY1, triX2, triY2, triX3, triY3;
-float faceX, faceY, faceDiameter, leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter, mouthX1, mouthY1, mouthX2, mouthY2;
-float trunkX1, trunkY1, trunkX2, trunkY2, trunkThick;
-float leaf1X1, leaf1Y1, leaf1X2, leaf1Y2, leaf1X3, leaf1Y3, leaf2X1, leaf2Y1, leaf2X2, leaf2Y2, leaf2X3, leaf2Y3, leaf3X1, leaf3Y1, leaf3X2, leaf3Y2, leaf3X3, leaf3Y3;
 PFont boxFont, buttonFont;
 int white = 0xffFFFFFF, black = 0xff000000, purple = 0xffC0B2CC, darkPurple = 0xff786a87, gray = 0xffACABAD, cream=0xffFCF5E3, brown=0xff65350F, sage=0xff526b48, cone=0xffdaa745;
 Boolean box6On=false, box1On=false, box9On=false, box8On=false, box4On=false, box7On=false, box3On=false, brwnOn=false, yellowOn=false, pinkOn=false,purpOn=false, picOn=false;
@@ -130,39 +127,58 @@ public void mousePressed() {
     purpOn=false;
   }
 }
-public void rectangles() {
-  fill(cream);
-  rect(pt1X, pt1Y, rectWidth, rectHeight);
-  rect(pt2X, pt2Y, rectWidth, rectHeight);
-  rect(pt3X, pt3Y, rectWidth, rectHeight);
-  rect(pt5X, pt5Y, rectWidth, rectHeight);
-  rect(pt6X, pt6Y, rectWidth, rectHeight);
-  rect(pt7X, pt7Y, rectWidth, rectHeight);
-  rect(pt9X, pt9Y, rectWidth, rectHeight);
-  rect(pt10X, pt10Y, rectWidth, rectHeight);
-  rect(pt11X, pt11Y, rectWidth, rectHeight);
-  fill(white);
-}
 
-public void points() {
-  fill(cream);
-  ellipse(pt1X, pt1Y, ptDiameter, ptDiameter);
-  ellipse(pt2X, pt2Y, ptDiameter, ptDiameter);
-  ellipse(pt3X, pt3Y, ptDiameter, ptDiameter);
-  ellipse(pt4X, pt4Y, ptDiameter, ptDiameter);
-  ellipse(pt5X, pt5Y, ptDiameter, ptDiameter);
-  ellipse(pt6X, pt6Y, ptDiameter, ptDiameter);
-  ellipse(pt7X, pt7Y, ptDiameter, ptDiameter);
-  ellipse(pt8X, pt8Y, ptDiameter, ptDiameter);
-  ellipse(pt9X, pt9Y, ptDiameter, ptDiameter);
-  ellipse(pt10X, pt10Y, ptDiameter, ptDiameter);
-  ellipse(pt11X, pt11Y, ptDiameter, ptDiameter);
-  ellipse(pt12X, pt12Y, ptDiameter, ptDiameter);
-  ellipse(pt13X, pt13Y, ptDiameter, ptDiameter);
-  ellipse(pt14X, pt14Y, ptDiameter, ptDiameter);
-  ellipse(pt15X, pt15Y, ptDiameter, ptDiameter);
-  ellipse(pt16X, pt16Y, ptDiameter, ptDiameter);
+
+
+public void mainscoop() {
+  //Main scoop
+    fill(cream);
+    noStroke();
+  if (brwnOn == true) {
+    fill(0xff65350f);
+  }
+  if (yellowOn == true) {
+    fill(0xfff9e076);
+  }
+  if (pinkOn == true) {
+    fill(0xffe30b5d);
+  }
+  if (purpOn == true) {
+    fill(0xff9a6bb0);
+  }
+  
+arc(2280, 1465, 340, 340,-10, PI+QUARTER_PI, OPEN);
+
 }
+//
+public void icecream(){
+ //Cone
+  fill(cone);
+triangle(triX1, triY1, triX2, triY2, triX3, triY3);
+}
+//
+public void scoopbubbles(){
+   fill(cream);
+   noStroke();
+  if (brwnOn == true) {
+    fill(0xff65350f);
+  }
+  if (yellowOn == true) {
+    fill(0xfff9e076);
+  }
+  if (pinkOn == true) {
+    fill(0xffe30b5d);
+  }
+  if (purpOn == true) {
+    fill(0xff9a6bb0);
+  }
+arc(2130, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
+arc(2220, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
+arc(2310, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
+arc(2420, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
+
+}
+ 
 int appWidth, appHeight;
 String box6Text= "“HI";
 String box1Text= "Fun Fact:soap has been around for at least 4,800 years!";
@@ -512,97 +528,39 @@ public void restartButton() {
   }
   fill(white);
 }
-/*void face() {
-  ellipse(faceX, faceY, faceDiameter, faceDiameter);
-  //Mouth
-  strokeWeight(5);
-  line(mouthX1, mouthY1, mouthX2, mouthY2);
-  strokeWeight(1);
-  //Eyes
-  fill(darkPurple);
-  if (blueOn == true) {
-    fill(#B6D9F7);
-  }
-  if (greenOn == true) {
-    fill(#B2E5B3);
-  }
-  if (pinkOn == true) {
-    fill(#FAD7EA);
-  }
-  ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
-  ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
+public void rectangles() {
+  fill(cream);
+  rect(pt1X, pt1Y, rectWidth, rectHeight);
+  rect(pt2X, pt2Y, rectWidth, rectHeight);
+  rect(pt3X, pt3Y, rectWidth, rectHeight);
+  rect(pt5X, pt5Y, rectWidth, rectHeight);
+  rect(pt6X, pt6Y, rectWidth, rectHeight);
+  rect(pt7X, pt7Y, rectWidth, rectHeight);
+  rect(pt9X, pt9Y, rectWidth, rectHeight);
+  rect(pt10X, pt10Y, rectWidth, rectHeight);
+  rect(pt11X, pt11Y, rectWidth, rectHeight);
   fill(white);
-}*/
-
-
-public void mainscoop() {
-  //Main scoop
-    fill(cream);
-    noStroke();
-  if (brwnOn == true) {
-    fill(0xff65350f);
-  }
-  if (yellowOn == true) {
-    fill(0xfff9e076);
-  }
-  if (pinkOn == true) {
-    fill(0xffe30b5d);
-  }
-  if (purpOn == true) {
-    fill(0xff9a6bb0);
-  }
-  
-arc(2280, 1465, 340, 340,-10, PI+QUARTER_PI, OPEN);
-
 }
-//
-public void icecream(){
- //Cone
-  fill(cone);
-triangle(triX1, triY1, triX2, triY2, triX3, triY3);
+
+public void points() {
+  fill(cream);
+  ellipse(pt1X, pt1Y, ptDiameter, ptDiameter);
+  ellipse(pt2X, pt2Y, ptDiameter, ptDiameter);
+  ellipse(pt3X, pt3Y, ptDiameter, ptDiameter);
+  ellipse(pt4X, pt4Y, ptDiameter, ptDiameter);
+  ellipse(pt5X, pt5Y, ptDiameter, ptDiameter);
+  ellipse(pt6X, pt6Y, ptDiameter, ptDiameter);
+  ellipse(pt7X, pt7Y, ptDiameter, ptDiameter);
+  ellipse(pt8X, pt8Y, ptDiameter, ptDiameter);
+  ellipse(pt9X, pt9Y, ptDiameter, ptDiameter);
+  ellipse(pt10X, pt10Y, ptDiameter, ptDiameter);
+  ellipse(pt11X, pt11Y, ptDiameter, ptDiameter);
+  ellipse(pt12X, pt12Y, ptDiameter, ptDiameter);
+  ellipse(pt13X, pt13Y, ptDiameter, ptDiameter);
+  ellipse(pt14X, pt14Y, ptDiameter, ptDiameter);
+  ellipse(pt15X, pt15Y, ptDiameter, ptDiameter);
+  ellipse(pt16X, pt16Y, ptDiameter, ptDiameter);
 }
-//
-public void scoopbubbles(){
-   fill(cream);
-   noStroke();
-  if (brwnOn == true) {
-    fill(0xff65350f);
-  }
-  if (yellowOn == true) {
-    fill(0xfff9e076);
-  }
-  if (pinkOn == true) {
-    fill(0xffe30b5d);
-  }
-  if (purpOn == true) {
-    fill(0xff9a6bb0);
-  }
-arc(2130, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
-arc(2220, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
-arc(2310, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
-arc(2420, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
-
-}
-  //
-  
- 
-
-//void tree() {
-  //Trunk
- // strokeWeight(10);
-  //strokeCap(SQUARE);
-  //line(trunkX1, trunkY1, trunkX2, trunkY2);
-  //strokeWeight (1);
-  //Leaves
- // fill (#2a443c);
-  //triangle(leaf1X1, leaf1Y1, leaf1X2, leaf1Y2, leaf1X3, leaf1Y3);
- // triangle(leaf2X1, leaf2Y1, leaf2X2, leaf2Y2, leaf2X3, leaf2Y3);
- // triangle(leaf3X1, leaf3Y1, leaf3X2, leaf3Y2, leaf3X3, leaf3Y3);
- // fill (white);
- 
-//}
-
-
 //Box 5
 public void box5Text() {
   textAlign (CENTER, CENTER);
@@ -896,50 +854,6 @@ public void variablePopulation() {
   triY2=rectHeight*3.0f;
   triX3=rectWidth*2.70f;
   triY3=rectHeight*2.50f;
-  //
-  //Face
- // faceX = rectWidth*5/2;
- // faceY = rectHeight*5/2;
- // faceDiameter = rectHeight*4/5;
-  //
- // leftEyeX = rectWidth*12/5;
- // leftEyeY = rectHeight*12/5;
- // rightEyeX = rectWidth*13/5;
- // rightEyeY = leftEyeY;
- // eyeDiameter = rectHeight/7;
-  //
- // mouthX1 = leftEyeX;
- // mouthY1 = rectHeight*21/8;
- // mouthX2 = rightEyeX;
- // mouthY2 = mouthY1;
-  //
-  //
-  //Tree (population numbers are from past composite images oroject, slightly modified
-  trunkX1 = rectWidth/2;
-  trunkY1 = rectHeight*13/5;
-  trunkX2 = rectWidth/2;
-  trunkY2 = rectHeight*57/20;
-  //
-  leaf1X1 = rectWidth*1/2;
-  leaf1Y1 = rectHeight*23/10;
-  leaf1X2 = rectWidth*7/20;
-  leaf1Y2 = rectHeight*53/20;
-  leaf1X3 = rectWidth*13/20;
-  leaf1Y3 = leaf1Y2;
-  //
-  leaf2X1 = rectWidth*1/2;
-  leaf2Y1 = rectHeight*11/5;
-  leaf2X2 = rectWidth*2/5;
-  leaf2Y2 = rectHeight*49/20;
-  leaf2X3 = rectWidth*3/5;
-  leaf2Y3 = leaf2Y2;
-  //
-  leaf3X1 = rectWidth*1/2;
-  leaf3Y1 = rectHeight*21/10;
-  leaf3X2 = rectWidth*17/40;
-  leaf3Y2 = rectHeight*23/10;
-  leaf3X3 = rectWidth*23/40;
-  leaf3Y3 = leaf3Y2;
 }
   public void settings() {  fullScreen(); }
   static public void main(String[] passedArgs) {
