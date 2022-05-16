@@ -22,8 +22,8 @@ Boolean box6On=false, box1On=false, box9On=false, box8On=false, box4On=false, bo
 void setup() {
   fullScreen(); //landscape
   
-  file= new SoundFile(this, "goat.wav");
- 
+  //file= new SoundFile(this, "goat.wav");
+  //file.play(1);
   variablePopulation();
   boxFont = createFont ("Cambria", 55);
   buttonFont = createFont ("Cambria", 25);
@@ -56,9 +56,7 @@ void mousePressed() {
   if ( mouseX>=button6X && mouseX<=button6X+button6Width && mouseY>=button6Y && mouseY<=button6Y+button6Height) box7On = true;
   if ( mouseX>=button3X && mouseX<=button3X+button3Width && mouseY>=button3Y && mouseY<=button3Y+button3Height) box3On = true;
   //
-  if (mouseX>=button1X && mouseX<=button1X+button1Width && mouseY>=button1Y && mouseY<=button1Y+button1Height)
-  {
-    file.play();
+ 
   if ( mouseX>=cButton1X && mouseX<=cButton1X+cButtonWidth && mouseY>=cButton1Y && mouseY<=cButton1Y+cButtonHeight) {
     brwnOn = true;
     yellowOn = false;

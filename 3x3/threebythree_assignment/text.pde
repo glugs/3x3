@@ -51,14 +51,14 @@ void box1Text() {
 }
 void button3Text() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont, 20);
+  textFont(buttonFont, 30);
   text(smells, button3X, button3Y, button3Width, button3Height);
   textFont(buttonFont);
   fill(white);
 }
 void button3Text2() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont, 20);
+  textFont(buttonFont, 30);
   text(green, button3X, button3Y, button3Width, button3Height);
   textFont(buttonFont);
   fill(white);
@@ -68,7 +68,7 @@ void button3Text2() {
 //Box 9
 void button4Text() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont, 20);
+  textFont(buttonFont, 30);
   text(Pick, button4X, button4Y, button4Width, button4Height);
   textFont(buttonFont);
   fill(white);
@@ -120,14 +120,14 @@ void button5Text() {
 //Box 4
 void orangetext() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont);
+  textFont(buttonFont,30);
   text(orange, button6X, button6Y, button6Width, button6Height);
   fill(sage);
 }
 
 void button6Text() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont);
+  textFont(buttonFont,30);
   text(produce, button6X, button6Y, button6Width, button6Height);
   fill(sage);
 }

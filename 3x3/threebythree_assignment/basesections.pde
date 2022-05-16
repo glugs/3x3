@@ -13,7 +13,7 @@ void rectangles() {
 }
 
 void points() {
-  fill(black);
+  fill(cream);
   ellipse(pt1X, pt1Y, ptDiameter, ptDiameter);
   ellipse(pt2X, pt2Y, ptDiameter, ptDiameter);
   ellipse(pt3X, pt3Y, ptDiameter, ptDiameter);
