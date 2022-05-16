@@ -1,4 +1,6 @@
 //Global Variables
+import processing.sound.*;
+SoundFile file;
 float ptDiameter, rectWidth, rectHeight;
 float pt1X, pt1Y, pt2X, pt2Y, pt3X, pt3Y, pt4X, pt4Y, pt5X, pt5Y, pt6X, pt6Y, pt7X, pt7Y, pt8X, pt8Y;
 float pt9X, pt9Y, pt10X, pt10Y, pt11X, pt11Y, pt12X, pt12Y, pt13X, pt13Y, pt14X, pt14Y, pt15X, pt15Y, pt16X, pt16Y;
@@ -19,9 +21,13 @@ Boolean box6On=false, box1On=false, box9On=false, box8On=false, box4On=false, bo
 
 void setup() {
   fullScreen(); //landscape
+  
+  file= new SoundFile(this, "goat.wav");
+ 
   variablePopulation();
   boxFont = createFont ("Cambria", 55);
   buttonFont = createFont ("Cambria", 25);
+  
 }
 
 void draw() {
@@ -50,6 +56,9 @@ void mousePressed() {
   if ( mouseX>=button6X && mouseX<=button6X+button6Width && mouseY>=button6Y && mouseY<=button6Y+button6Height) box7On = true;
   if ( mouseX>=button3X && mouseX<=button3X+button3Width && mouseY>=button3Y && mouseY<=button3Y+button3Height) box3On = true;
   //
+  if (mouseX>=button1X && mouseX<=button1X+button1Width && mouseY>=button1Y && mouseY<=button1Y+button1Height)
+  {
+    file.play();
   if ( mouseX>=cButton1X && mouseX<=cButton1X+cButtonWidth && mouseY>=cButton1Y && mouseY<=cButton1Y+cButtonHeight) {
     brwnOn = true;
     yellowOn = false;
