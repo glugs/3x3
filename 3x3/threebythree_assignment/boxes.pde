@@ -8,7 +8,7 @@ String Jam="Look, ice cream!";
 String Pick="Pick a Flavor!";
 String go="Come on:)";
 String quit= "Quit";;
-String restart= "Restart";
+String restart= "Restart?";
 String rasp="RASPBERRY RHUBARB";
 String ube="UBE";
 String yuzu=" YUZU";
@@ -17,10 +17,12 @@ String ljams="A local band!";
 String produce="How 'bout some produce?";
 String orange="Orange you glad we came here!";
 String soap="Let's get some au naturel soaps!";
-String night="Whew, what a day!";
+String night="Cool plants!";
 String green="Visit the greenhouse!";
 String smells="Smells nice!";
-String fun="Hope you had fun! 'Till next time:)";
+String fun="Hope you had fun!";
+String bye="Bye";
+String till="'Till next time:)";
 
 
 void box5() {
@@ -30,7 +32,7 @@ void box5() {
   line(pt6X, pt6Y, pt7X, pt7Y); 
   line(pt6X, pt6Y, pt10X, pt10Y);
   line(pt10X, pt10Y, pt11X, pt11Y); 
-   restartButton();
+   
    quitButton();
 }
 
@@ -103,9 +105,10 @@ void box3() {
 }
 
 void box2() {
-   if (box7On == true) {
+   if (box2On == true) {
     image(pic8, image8X, image8Y, imageWidth, imageHeight);
     line(pt2X, pt2Y, pt6X, pt6Y);
     line(pt3X, pt3Y, pt7X, pt7Y);
+    restartButton();
    }
 }

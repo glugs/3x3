@@ -16,8 +16,8 @@ void variablePopulation() {
   //
   //
   //Button 1 (for box 5)
-  button1X = rectWidth; //stars at the left edge of box 5
-  button1Y = rectHeight*15/8; // rectHeight*8/8 would start it from the very top of box 5
+  button1X = rectWidth; //
+  button1Y = rectHeight*15/8; // 
   button1Width = rectWidth*7/24;
   button1Height = rectHeight*1/8;
   //Button 2 (for box 6)
@@ -35,7 +35,7 @@ void variablePopulation() {
   button4Y = rectHeight*21/8; 
   button4Width = rectWidth*1/6;
   button4Height = rectHeight*1/4;
-  //Button 5 + Colour Buttons (for box 8)
+  //
   cButton1X = rectWidth*10/9; 
   cButton1Y = rectHeight*18/8; 
   cButton2X = rectWidth*14/9; 
@@ -61,17 +61,23 @@ void variablePopulation() {
   //Button 8 (for box 3)
   button8X = rectWidth*31/15; 
   button8Y = rectHeight*5/8; 
-  button8Width = rectWidth*1/4;
+  button8Width = rectWidth*1/2;
   button8Height = rectHeight*1/5;
+  //
+ button9X=rectWidth*2;
+ button9Y = rectHeight*1; 
+ button9Width = rectWidth*1/4;
+ button9Height = rectHeight*1/5;
+  
   //Quit Button and Restart Button (for box 2)
   quitButtonX = rectWidth*1;
   quitButtonY = rectHeight*1;
   quitButtonWidth = rectWidth*0.15;
   quitButtonHeight = rectHeight*0.2;
-  restartButtonX = rectWidth*1.85;
-  restartButtonY = rectHeight*1;
-  restartButtonWidth = rectWidth*0.15;
-  restartButtonHeight = rectHeight*0.2;
+  restartButtonX = rectWidth*1.65;
+  restartButtonY = rectHeight*0.6;
+  restartButtonWidth = rectWidth*0.3;
+  restartButtonHeight = rectHeight*0.3;
   //
   //
   //Pics

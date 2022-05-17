@@ -5,7 +5,7 @@ void button1() {
     rect(button1X, button1Y, button1Width, button1Height);
     button1Text2();
   } else {
-    stroke(gray);
+    stroke(black);
     fill(cream);
     rect(button1X, button1Y, button1Width, button1Height);
     stroke(black);
@@ -206,6 +206,26 @@ void button8() {
   fill(white);
 }
 
+void button9() {
+  rect(button9X, button9Y, button9Width, button9Height);
+  if (mouseX>=button9X && mouseX<=button9X+button9Width && mouseY>=button9Y && mouseY<=button9Y+button9Height) {
+    fill(black);
+    rect(button9X, button9Y, button9Width, button9Height);
+    fill(white);
+    button8Text2();
+  } else {
+    stroke(#645c5d);
+    fill(sage); 
+    rect(button9X, button9Y, button9Width, button9Height);
+    stroke(black);
+    fill(cream);
+    button8Text();
+  }
+  fill(white);
+}
+  
+
+
 
 void quitButton() {
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
@@ -227,17 +247,17 @@ void quitButton() {
 void restartButton() {
   rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
   if ( mouseX>=restartButtonX && mouseX<=restartButtonX+restartButtonWidth && mouseY>=restartButtonY && mouseY<=restartButtonY+restartButtonHeight) {
-    fill(brown);
+    fill(#2C355F);
     rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
     fill(cream);
     restartText();
   } else {
-    stroke(brown);
-    fill(cream);
+    stroke(black);
+    fill(#4A4C55);
     rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
     stroke(black);
-    fill(brown);
-    restartText();
+    fill(cream);
+    nexttime();
   }
   fill(white);
 }

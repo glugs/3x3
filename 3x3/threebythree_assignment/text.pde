@@ -120,14 +120,14 @@ void button5Text() {
 //Box 4
 void orangetext() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont,width/50);
+  textFont(buttonFont,width/60);
   text(orange, button6X, button6Y, button6Width, button6Height);
   fill(sage);
 }
 
 void button6Text() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont,width/50);
+  textFont(buttonFont,width/60);
   text(produce, button6X, button6Y, button6Width, button6Height);
   fill(sage);
 }
@@ -141,19 +141,19 @@ void button7Text() {
 }
 void button7Text2() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont,width/50);
+  textFont(buttonFont,width/60);
   text(soap, button7X, button7Y, button7Width, button7Height);
   fill(white);
 }
 void button8Text() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont,width/60);
+  textFont(buttonFont,width/70);
   text(night, button8X, button8Y, button8Width, button8Height);
   fill(white);
 }
 void button8Text2() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont,width/60);
+  textFont(buttonFont,width/70);
   text(fun, button8X, button8Y, button8Width, button8Height);
   fill(white);
 }
@@ -161,15 +161,22 @@ void button8Text2() {
 //Box 2
 void quitText() {
   textAlign (CENTER, CENTER);
-  textFont(boxFont, width/55);
+  textFont(boxFont, width/50);
   text(quit, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   fill(white);
   textFont(boxFont);
 }
 void restartText() {
   textAlign (CENTER, CENTER);
-  textFont(boxFont, 20);
+  textFont(boxFont, width/70);
   text(restart, restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
+  fill(white);
+  textFont(boxFont);
+}
+  void nexttime() {
+  textAlign (CENTER, CENTER);
+  textFont(boxFont, width/70);
+  text(till, restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
   fill(white);
   textFont(boxFont);
 }
