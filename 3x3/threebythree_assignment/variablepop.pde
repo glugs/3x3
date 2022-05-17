@@ -17,9 +17,9 @@ void variablePopulation() {
   //
   //Button 1 (for box 5)
   button1X = rectWidth; //
-  button1Y = rectHeight*15/8; // 
-  button1Width = rectWidth*7/24;
-  button1Height = rectHeight*1/8;
+  button1Y = rectHeight*1.85; // 
+  button1Width = rectWidth*8/24;
+  button1Height = rectHeight*0.15;
   //Button 2 (for box 6)
   button2X = rectWidth*14/6; 
   button2Y = rectHeight*27/16; 
@@ -31,9 +31,9 @@ void variablePopulation() {
   button3Width = rectWidth*1/2;
   button3Height = rectHeight*1/5;
   //Button 4 (for box 9)
-  button4X = rectWidth*14/5; 
+  button4X = rectWidth*2.7; 
   button4Y = rectHeight*21/8; 
-  button4Width = rectWidth*1/6;
+  button4Width = rectWidth*0.3;
   button4Height = rectHeight*1/4;
   //
   cButton1X = rectWidth*10/9; 

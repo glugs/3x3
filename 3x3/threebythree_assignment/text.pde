@@ -32,7 +32,7 @@ void box6Text() {
 }
 void button2Text() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont, width/50);
+  textFont(buttonFont, width/70);
   text(Jam, button2X, button2Y, button2Width, button2Height);
   textFont(buttonFont);
   fill(white);
@@ -135,7 +135,7 @@ void button6Text() {
 //Box 7
 void button7Text() {
   textAlign (CENTER, CENTER);
-  textFont(buttonFont,width/60);
+  textFont(buttonFont,width/70);
   text(clickMe, button7X, button7Y, button7Width, button7Height);
   fill(white);
 }

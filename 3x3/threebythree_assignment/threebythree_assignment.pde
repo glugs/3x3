@@ -18,8 +18,8 @@ color white = #FFFFFF, black = #000000, purple = #C0B2CC, darkPurple = #786a87, 
 Boolean box6On=false, box2On=false, box1On=false, box9On=false, box8On=false, box4On=false, box7On=false, box3On=false, brwnOn=false, yellowOn=false, pinkOn=false,purpOn=false, picOn=false;
 
 void setup() {
-  size(1380,800);
-  //fullScreen(); //landscape
+  //size(1380,800);
+  fullScreen(); //landscape
   println(width);
   
   //file= new SoundFile(this, "goat.wav");
