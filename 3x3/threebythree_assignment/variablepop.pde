@@ -28,7 +28,7 @@ void variablePopulation() {
   //Button 3 (for box 1)
   button3X = rectWidth*1/25; 
   button3Y = rectHeight*5/16; 
-  button3Width = rectWidth*1/4;
+  button3Width = rectWidth*1/2;
   button3Height = rectHeight*1/5;
   //Button 4 (for box 9)
   button4X = rectWidth*14/5; 
@@ -49,14 +49,14 @@ void variablePopulation() {
   button5X = rectWidth*1/2;
   button5Y = rectHeight*1.5;
   //Button 6 (for box 4)
-  button6X = rectWidth*11/16; 
+  button6X = rectWidth*0; 
   button6Y = rectHeight*2.5; 
-  button6Width = rectWidth*1/4;
-  button6Height = rectHeight*1/5;
+  button6Width = rectWidth*1;
+  button6Height = rectHeight*1/4;
   //Button 7 (for box 7)
   button7X = rectWidth*0; 
-  button7Y = rectHeight*2.9; 
-  button7Width = rectWidth*1/2;
+  button7Y = rectHeight*2.87; 
+  button7Width = rectWidth*1;
   button7Height = rectHeight*1/8;
   //Button 8 (for box 3)
   button8X = rectWidth*31/15; 
@@ -64,27 +64,28 @@ void variablePopulation() {
   button8Width = rectWidth*1/4;
   button8Height = rectHeight*1/5;
   //Quit Button and Restart Button (for box 2)
-  quitButtonX = rectWidth*5/4;
-  quitButtonY = rectHeight*1/9;
-  quitButtonWidth = rectWidth*1/2;
-  quitButtonHeight = rectHeight*1/3;
-  restartButtonX = rectWidth*5/4;
-  restartButtonY = rectHeight*5/9;
-  restartButtonWidth = rectWidth*1/2;
-  restartButtonHeight = rectHeight*1/3;
+  quitButtonX = rectWidth*1;
+  quitButtonY = rectHeight*1;
+  quitButtonWidth = rectWidth*0.15;
+  quitButtonHeight = rectHeight*0.2;
+  restartButtonX = rectWidth*1.85;
+  restartButtonY = rectHeight*1;
+  restartButtonWidth = rectWidth*0.15;
+  restartButtonHeight = rectHeight*0.2;
   //
   //
   //Pics
   imageWidth = rectWidth;
   imageHeight = rectHeight;
   //
-  pic1 = loadImage ("swirl.jpg"); //Dimensions: 500 Width, 515 Height
-  pic2 = loadImage ("ket.jpg"); //Dimensions: 564 Width, 564 Height
-  pic3 = loadImage ("soap2.jpg"); //Dimensions: 564 Width, 564 Height
-  pic4 = loadImage ("band.jpg"); //Dimensions: 564 Width, 564 Height
-  pic5 = loadImage ("fruit.jpg"); //Dimensions: 533 Width, 470 Height
-  pic6 = loadImage ("greenhouse.jpg"); //Dimensions: 564 Width, 493 Height
-  pic7 = loadImage ("rv.jpg"); //Dimensions: 564 Width, 480 Height
+  pic1 = loadImage ("swirl.jpg"); 
+  pic2 = loadImage ("ket.jpg"); 
+  pic3 = loadImage ("soap2.jpg"); 
+  pic4 = loadImage ("band.jpg"); 
+  pic5 = loadImage ("fruit.jpg"); 
+  pic6 = loadImage ("greenhouse.jpg"); 
+  pic7 = loadImage ("inside.jpg"); 
+  pic8= loadImage  ("rv.jpg");
   //
   image1X = width*1/3;
   image1Y = height*1/3;
@@ -98,6 +99,8 @@ void variablePopulation() {
   image5Y = height*2/3;
   image6X = width*2/3;
   image6Y = height*0;
+  image8X=width*1/3;
+  image8Y=width*0;
   //
   //
   //Text
@@ -109,6 +112,29 @@ void variablePopulation() {
   text1Height = rectHeight*1/3;
   text8Y = rectHeight*31/15;
   //
+  //scoop
+  scoopX= rectWidth*2.5;
+  scoopY= rectHeight*2.45;
+  scoopDiameter=rectHeight/1.75;
+ //scoop bubbles
+  bub1X=rectWidth*2.35;
+  bub1Y= rectHeight*2.5;
+  bub1Diameter=rectHeight/4.7;
+  //
+  bub2X=rectWidth*2.44;
+  bub2Y= rectHeight*2.5;
+  bub2Diameter=rectHeight/4.7;
+  //
+  bub3X=rectWidth*2.55;
+  bub3Y= rectHeight*2.5;
+  bub3Diameter=rectHeight/4.7;
+  //
+  bub4X=rectWidth*2.65;
+  bub4Y= rectHeight*2.5;
+  bub4Diameter=rectHeight/4.7;
+ 
+  //
+ 
   //Icecreamcone
   triX1=rectWidth*2.30;
   triY1=rectHeight*2.50;

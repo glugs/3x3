@@ -18,7 +18,7 @@ void mainscoop() {
     fill(#9a6bb0);
   }
   
-arc(2280, 1465, 340, 340,-10, PI+QUARTER_PI, OPEN);
+ellipse(scoopX, scoopY, scoopDiameter, scoopDiameter);
 
 }
 //
@@ -43,10 +43,10 @@ void scoopbubbles(){
   if (purpOn == true) {
     fill(#9a6bb0);
   }
-arc(2130, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
-arc(2220, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
-arc(2310, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
-arc(2420, 1500, 130, 130,-5, PI+QUARTER_PI, OPEN);
+ ellipse(bub1X, bub1Y, bub1Diameter, bub1Diameter);
+ ellipse(bub2X, bub2Y, bub2Diameter, bub2Diameter);
+ ellipse(bub3X, bub3Y, bub3Diameter, bub3Diameter);
+ ellipse(bub4X, bub4Y, bub4Diameter, bub4Diameter);
 
 }
  
